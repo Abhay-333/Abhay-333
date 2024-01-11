@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 35% 25% 80%;
+    /* background-color: brown; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: red; */
+    gap: 40px;
+    padding: 0px 40px;
+}
+
+nav h1 {
+    font-size: 1.4vw;
+}
+
+nav i {
+    font-size: 1.4vw;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.center {
+    padding: 0px 50px;
+    /* background-color: blue; */
+}
+
+.center h1 {
+    line-height: 70px;
+    font-size: 5vw;
+}
+
+.lorem {
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    padding: 0px 50px;
+}
+
+.lorem h3 {
+    text-align: left;
+    width: 60%;
+    /* padding: 35px 50px; */
+    font-size: 1.1vw;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.add-to-cart {
+    margin-top: 30px;
+}
+
+.add-to-cart h2 {
+    font-size: 1.3vw;
+    padding: 10px;
+}
+
+.elem:hover {
+    background-color: rgb(182, 180, 180);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.elem:hover i {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    transition: all ease-in-out 0.2s;
+}
+
+.elem i {
+    opacity: 0;
+    font-size: 23px;
+    transition: all ease-in-out 0.2s;
+}
+
+.img {
+    background-color: orange;
+    overflow: hidden;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 15%;
+}
+
+@media (max-width:600px) {
+
+    .main {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 35% 45% 30%;
+    }
+
+    nav h1 {
+        font-size: 2.9vw;
+    }
+
+    nav i {
+        font-size: 3.9vw;
+    }
+
+    .center h1 {
+        margin-top: 30px;
+        line-height: 50px;
+        font-size: 10.4vw;
+    }
+
+    .center {
+        padding: 0px 30px;
+        /* background-color: blue; */
+    }
+
+    .lorem {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 50%;
+        padding: 0px 30px;
+    }
+
+    .lorem h3 {
+        margin-top: 20px;
+        text-align: left;
+        width: 80%;
+        /* padding: 35px 50px; */
+        font-size: 3vw;
+        font-weight: 900;
+    }
+
+    .add-to-cart {
+        margin-top: 50px;
+    }
+
+    .add-to-cart h2 {
+        font-size: 4.9vw;
+        padding: 10px;
+    }
+
+}
