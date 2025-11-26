@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Abhay Dhaneshwar</h1>
 <h3 align="center">A passionate frontend developer from India. Still figuring out how things work in Computer Science..</h3>
-# 💫 About Me:
+💫 About Me:
 🌱 I’m currently learning MERN Stack<br>💬 Ask me about Frontend Development
 
 
